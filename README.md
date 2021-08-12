@@ -26,7 +26,7 @@ Micro-F1/Macro-F1 scores will be shown in the last several lines of the output. 
 ## Datasets
 The JSON version of the two datasets can be downloaded [**here**](https://gofile.io/d/JXPZyt).
 
-## Running MotifClass from Scratch
+## Run MotifClass from Scratch
 After downloading the JSON version of the two datasets, unzip it (i.e., ```MotifClass_Datasets.zip```), and put the unziped folders under the main folder ```./```.
 
 Then, you need to first run joint representation learning, motif instance selection, and pseudo training data retrieval. To do this,
