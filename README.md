@@ -4,7 +4,7 @@
 For training, a GPU is strongly recommended.
 
 ### Keras
-The code is based on Keras. You can find installation instructions [**here**](https://keras.io/#installation).
+The code is based on Keras.
 
 ### Dependency
 The dependencies are summarized in the file ```requirements.txt```. You can install them like this:
