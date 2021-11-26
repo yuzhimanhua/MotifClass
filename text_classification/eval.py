@@ -1,4 +1,3 @@
-import string
 from sklearn.metrics import f1_score
 from sklearn.metrics import confusion_matrix
 import argparse
@@ -10,12 +9,12 @@ args = parser.parse_args()
 dataset = args.dataset
 
 y = []
-with open(dataset+'/dataset.csv') as fin:
+with open(f'{dataset}/dataset.csv') as fin:
 	for line in fin:
 		y.append(line.strip().split(',')[0])
 
 y_pred = []
-with open(dataset+'/out.txt') as fin:
+with open(f'{dataset}/out.txt') as fin:
 	for line in fin:
 		y_pred.append(line.strip())
 

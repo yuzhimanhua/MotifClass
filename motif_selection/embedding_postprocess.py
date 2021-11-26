@@ -1,13 +1,17 @@
+import os
 import argparse
 
 parser = argparse.ArgumentParser(description='main', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-parser.add_argument('--dataset', default='MAG', choices=['MAG', 'Amazon'])
-
+parser.add_argument('--dataset', default='mag', choices=['mag', 'amazon'])
 args = parser.parse_args()
+
 dataset = args.dataset
 
+if not os.path.exists(f'../text_classification/{dataset}/'):
+	os.makedirs(f'../text_classification/{dataset}/')
+
 cnt = 0
-with open(dataset+'.emb') as fin:
+with open(f'{dataset}.emb') as fin:
 	for idx, line in enumerate(fin):
 		if idx == 0:
 			continue
@@ -17,7 +21,7 @@ with open(dataset+'.emb') as fin:
 			continue
 		cnt += 1
 
-with open(dataset+'.emb') as fin, open(f'../../MotifClass/{dataset.lower()}/embedding_joint', 'w') as fout:
+with open(f'{dataset}.emb') as fin, open(f'../text_classification/{dataset}/embedding_joint', 'w') as fout:
 	fout.write(str(cnt)+' 100\n')
 	for idx, line in enumerate(fin):
 		if idx == 0:
