@@ -126,10 +126,11 @@ If you need to run our code on your own dataset, please follow the steps below.
 ## Citation
 If you find the implementation useful, please cite the following paper:
 ```
-@article{zhang2021motifclass,
+@inproceedings{zhang2022motifclass,
   title={MotifClass: Weakly Supervised Text Classification with Higher-order Metadata Information},
   author={Zhang, Yu and Garg, Shweta and Meng, Yu and Chen, Xiusi and Han, Jiawei},
-  journal={arXiv preprint arXiv:2111.04022},
-  year={2021}
+  booktitle={WSDM'22},
+  pages={1357--1367},
+  year={2022}
 }
 ```
