@@ -1,6 +1,6 @@
 # MotifClass: Weakly Supervised Text Classification with Higher-order Metadata Information
 
-This paper provides a weakly supervised framework for metadata-aware document categorization, where no human-annotated training samples are needed.
+This repository contains the source code for [**MotifClass: Weakly Supervised Text Classification with Higher-order Metadata Information**](https://arxiv.org/abs/2111.04022).
 
 ## Links
 
