@@ -131,6 +131,7 @@ If you find the implementation useful, please cite the following paper:
   author={Zhang, Yu and Garg, Shweta and Meng, Yu and Chen, Xiusi and Han, Jiawei},
   booktitle={WSDM'22},
   pages={1357--1367},
-  year={2022}
+  year={2022},
+  organization={ACM}
 }
 ```
