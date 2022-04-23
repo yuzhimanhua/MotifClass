@@ -31,7 +31,7 @@ make
 ```
 
 ## Quick Start
-To reproduce the results in our paper, you need to first download the [**datasets**](https://drive.google.com/file/d/1LQnHK9Cd6zSrQTASc4xauHLv2LFVFw_r/view?usp=sharing). Two datasets are used in our paper: **MAG-CS** and **Amazon**. Once you unzip the downloaded file (i.e., ```datasets.zip```), you can see two folders ```mag_data/``` and ```amazon_data``` corresponding to these two datasets, respectively. You need to put these two folders under the main folder ```./```. Then the following scripts can be used to run the model.
+To reproduce the results in our paper, you need to first download the [**datasets**](https://drive.google.com/file/d/1LQnHK9Cd6zSrQTASc4xauHLv2LFVFw_r/view?usp=sharing). Two datasets are used in our paper: **MAG-CS** and **Amazon**. Once you unzip the downloaded file (i.e., ```datasets.zip```), you can see two folders ```mag_data/``` and ```amazon_data/``` corresponding to these two datasets, respectively. You need to put these two folders under the main folder ```./```. Then the following scripts can be used to run the model.
 
 ```
 ./selection.sh
@@ -47,7 +47,7 @@ Two datasets, **MAG-CS** and **Amazon**, are used in our paper. Dataset statisti
 | MAG-CS | 203,157 | 20 | Author, Venue, Year |
 | Amazon | 100,000 | 10 | User, Product |
 
-After you download the [**datasets**](https://drive.google.com/file/d/1LQnHK9Cd6zSrQTASc4xauHLv2LFVFw_r/view?usp=sharing), there are three input files in a dataset folder: **```dataset.json```**, **```labels.txt```**, and **```motifs.txt```**.
+After you download the [**datasets**](https://drive.google.com/file/d/1LQnHK9Cd6zSrQTASc4xauHLv2LFVFw_r/view?usp=sharing), there are three input files in each dataset folder: **```dataset.json```**, **```labels.txt```**, and **```motifs.txt```**.
 
 ```dataset.json``` has text and metadata information of each document. Each line is a json record representing one document. For example,
 ```
