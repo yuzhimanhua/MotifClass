@@ -54,10 +54,7 @@ After you download the [**datasets**](https://drive.google.com/file/d/1LQnHK9Cd6
 {
    "document":"3022911403",
    "author":[
-      "3021171202",
-      "2999350943",
-      "3000115053",
-      "2999233743"
+      "3021171202", "2999350943", "3000115053", "2999233743"
    ],
    "venue":[
       "VLDB"
@@ -71,7 +68,7 @@ After you download the [**datasets**](https://drive.google.com/file/d/1LQnHK9Cd6
 ```
 Here, "document" is the document id (it does not have specific meanings; just make sure different documents have different ids); "author", "venue", and "year" are metadata fields.
 
-**NOTE: If you would like to run our code on your own dataset, when you prepare this json file, make sure: (1) The "document", "text", and "label" fields are provided. (2) For each document, its metadata field is always represented by a list of strings. For example, the "year" field should be \["2009"\] instead of 2009 or "2009". You can define your own metadata fields, not necessarily "author", "venue", or "year". 
+**NOTE: If you would like to run our code on your own dataset, when you prepare this json file, make sure: (1) The "document", "text", and "label" fields are provided. (2) For each document, its metadata field is always represented by a list of strings. For example, the "year" field should be \["2009"\] instead of 2009 or "2009". You can define your own metadata fields, not necessarily "author", "venue", or "year".** 
 
 ```labels.txt``` is the list of category names. For example,
 ```
