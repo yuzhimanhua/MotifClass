@@ -1,6 +1,7 @@
 import json
 from collections import defaultdict
 import argparse
+from tqdm import tqdm
 
 parser = argparse.ArgumentParser(description='main', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--dataset', default='mag', choices=['mag', 'amazon'])
@@ -24,9 +25,7 @@ with open(f'{dataset}_network.dat', 'w') as fout:
 
 	# Motif (Term)-Context
 	with open(f'../{dataset}_data/dataset.json') as fin:
-		for idx, line in enumerate(fin):
-			if idx % 10000 == 0:
-				print(idx)
+		for idx, line in enumerate(tqdm(fin)):
 			data = json.loads(line)
 
 			seq = []

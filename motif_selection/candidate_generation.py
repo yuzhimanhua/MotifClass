@@ -2,6 +2,7 @@ import json
 from collections import defaultdict
 from collections import deque
 import argparse
+from tqdm import tqdm
 
 parser = argparse.ArgumentParser(description='main', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--dataset', default='mag', choices=['mag', 'amazon'])
@@ -18,10 +19,7 @@ with open(f'../{dataset}_data/motifs.txt') as fin:
 
 motif2paper = defaultdict(list)
 with open(f'../{dataset}_data/dataset.json') as fin:
-	for idx, line in enumerate(fin):
-		if idx % 10000 == 0:
-			print(idx)
-
+	for idx, line in enumerate(tqdm(fin)):
 		data = json.loads(line)
 		D = 'DOCUMENT_'+data['document']
 		

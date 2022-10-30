@@ -1,5 +1,6 @@
 import json
 import argparse
+from tqdm import tqdm
 
 parser = argparse.ArgumentParser(description='main', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument('--dataset', default='mag', choices=['mag', 'amazon'])
@@ -22,9 +23,7 @@ with open(f'../{dataset}_data/labels.txt') as fin:
 		label2id[data] = str(idx)
 
 with open(f'../{dataset}_data/dataset.json') as fin, open(f'{dataset}/dataset.csv', 'w') as fout:
-	for idx, line in enumerate(fin):
-		if idx % 10000 == 0:
-			print(idx)
+	for idx, line in enumerate(tqdm(fin)):
 		data = json.loads(line)
 		l_id = label2id[data['label']]
 		output = []
