@@ -123,7 +123,7 @@ If you need to run our code on your own dataset, please follow the steps below.
 ```
 
 ## Citation
-If you find the implementation useful, please cite the following paper:
+If you find this repository useful, please cite the following paper:
 ```
 @inproceedings{zhang2022motifclass,
   title={MotifClass: Weakly Supervised Text Classification with Higher-order Metadata Information},
